@@ -144,6 +144,9 @@ function playNote(key) {
     key.classList.remove('active');
   });
 }
+
+
+
 document.addEventListener('keydown', (e) => {
   if (e.repeat) return;
   const key = e.key;
@@ -153,6 +156,7 @@ document.addEventListener('keydown', (e) => {
   if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
   if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
 });
+
 
 
 
@@ -169,6 +173,7 @@ const body = document.querySelector('body');
 const text = document.createElement('p');
 
 body.appendChild(text);
+
 
 //mascota
 const charly={
@@ -235,3 +240,31 @@ const main = async () => {
   console.log('Hi ^^')
 }
 main();
+
+let guessedAge=0;
+const getGuessedAge = async () => {
+  const response = await fetch ('https://api.agify.io/?name=pilar');
+const data = await response.json();
+console.log(data);
+return data.age;
+
+}
+const displayGuessedAge = async () =>{
+  let guessedAgeSpan = document.getElementById("guessedAge");
+  const isCorrectSpan=  document. getElementById("isGuessRight");
+ 
+
+
+   guessedAge= await getGuessedAge ();
+   console.log(guessedAge);
+  guessedAgeSpan.textContent = guessedAge;
+
+  if(guessedAge !==16)
+  {
+    isCorrectSpan.textContent = "incorrecto"
+  }else{
+     isCorrectSpan.textContect ="correcto"
+  }
+
+}
+displayGuessedAge();
