@@ -261,7 +261,7 @@ const displayGuessedAge = async () =>{
 
   if(guessedAge !==16)
   {
-    isCorrectSpan.textContent = "incorrecto"
+    isCorrectSpan.textContent ="incorrecto"
   }else{
      isCorrectSpan.textContect ="correcto"
   }
