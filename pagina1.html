@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+<style>
+	main{
+		display:flex
+		}
+		
+		body {
+            background: #FAFDD6;
+    color: #87805E;
+    font-family: 'Mouse Memoirs', sans-serif;
+		margin: 0;
+		}
+		
+		h2{
+		font-family: candara
+		}
+		
+		h3{
+		font-family: candara
+		}
+		
+		p{
+		font-family: candara
+		}
+		
+		li{
+		font-family: candara
+		}
+		
+		#footer{
+		padding:0 20px 20px 20px;
+		display:flex;
+		margin-top:auto;
+		background-color:#C4DFAA;;
+		}
+		
+		.footer__section{
+		flex: 1;
+		display:flex;
+		align-items: center;
+		flex-direction:column;
+		}
+		
+		.social__networks{
+			display:flex;
+			flex-direction:column;
+			gap:20px;
+		}
+		
+		.social__network{
+			display:flex;
+			align-items: center;
+		}
+		
+		.social__icon{
+			font-size: 32px;
+		}
+		
+		.social__icon-handler{
+			margin-left: 10px;
+		}
+		
+		a{
+			text-decoration:underline;
+			color: inherit;
+		}
+		
+		a:hover{
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+		
+		input[type=email], textarea{
+			width:100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border:3px solid #adaca7;
+			transition: 0.5s;
+			outline: none;
+		}
+		
+		input[type=email]:focus, textarea focus{
+			border:3px solid rgb(155, 85, 85);
+		}
+		
+		input[type=sumbit]{
+			background: #A1E3D8;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		
+		#navigation-bar li{
+			display: inline-block;
+		}
+		
+		#navigation-bar ul{
+			margin: 0;
+			padding: 0;
+			border: 1px solid #e7e7e7;
+			background-color: #6fe765;
+		}
+		
+		#navigation-bar li a{
+			display: block;
+			color: #87805E;
+			text-align:center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		
+		#navigation-bar li a:hover:not(.active){
+			background-color: rgb(71, 211, 230);
+		}
+		
+		#navigation-bar li a.active{
+			color: bold black;
+			background-color: rgb(71, 211, 230);
+		}
+		
+		#navigation-bar .menu__hamburger-icon {
+			display: none;
+		}
+		
+		@media screen and (max-width: 600px) {
+			#navigation-bar .menu__hamburger-icon {
+				display: none;
+				float: right;
+			}
+		}
+		
+		@media screen and (max-width: 600px) {
+			#navigation-bar li:not(:first-child):not(.menu__hamburger-icon){
+				display: none;
+			}
+		
+			#navigation-bar .menu__hamburger-icon{
+				display: block;
+				float: right;
+			}
+		}
+		
+		@media screen and (max-width: 600px) {
+			#navigation-bar li:not(:first-child){
+				display: none;
+			}
+			#navigation-bar li.menu__hamburger-icon {
+				display:block;
+				float: right;
+			}
+			#navigation-bar.responsive {
+				position:relative;
+			}
+			#navigation-bar.responsive .menu__hamburger-icon {
+				position: absolute;
+				right:0;
+				top: 0;
+			}
+			#navigation-bar.responsive .menu__hamburger-icon a {
+				color: #fff;
+			
+			}
+			#navigation-bar.responsive li a {
+			text-align: left;
+			}
+			
+			 #navigation-bar.responsive li {
+                float: none;
+                display: block !important;
+            }
+		}
+	</style>
+	
+<script>
+	function myFunction() {
+		const navigationBar = document.getElementById("navigation-bar");
+		if (navigationBar.className === "navigation-bar") {
+			navigationBar.className += " responsive";
+		} else {
+			navigationBar.className = "navigation-bar";
+		}
+	}
+</script>
+
+<title>Ada Lovelace</title>
+</head>
+	
+	<body>
+		
+		<header id= "#header">
+			<div style="background-color:#C7CEEA;">
+			<h1 style="text-align: center; width:100%; padding: 25px; font-family: Lucida Sans;">Ada Lovelace</h1>
+			<h2 style="text-align: center"><b>Primer programador de la historia</b></h2>
+        </div>
+		</header>
+
+
+	<nav id="navigation-bar" class="navigation-bar">
+		<ul>
+			<li><a class="active" href="">Inicio</a></li>
+            <li> <a href="https://www.exevi.com/wp-content/uploads/2017/11/Infografi%CC%81a-Ada-Lovelace.pdf">Infografía</a></li>
+			<li><a href="">Más información</a></li>
+            <li><a href="https://www.youtube.com/watch?v=bYCDVwyuVt4">Video</a></li>
+			<li class="menu__hamburger-icon">
+				<a href="javascript:void(0);" onclick="myFunction()">
+					<i class="lni lni-menu"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+<main>
+<aside style="width:20%; background-color:#A1E3D8; padding: 10px; flex-direction:column;">
+	<div>
+		<h3 style="text-align:center; font-family: Lucida Sans;"><b>Sitios de interés</b></h3> 
+		<hr>
+            <p><li><a href="https://www.abc.es/ciencia/abci-lovelace-legado-201212100000_noticia.html">Los seis descubrimientos que le deben los programadores</a>
+        </li></p>
+        <p><li><a href="https://www.fundacionaquae.org/wiki/ada-lovelace-madre-de-la-programacion/">La "madre" de la programación</a></li></p>
+        <p><li><a href="https://www.info.unlp.edu.ar/7-datos-curiosos-sobre-ada-lovelace-la-primera-programadora-de-la-historia/">7 datos curiosos sobre la primera programadora de la historia</a></li></p>
+			
+	</div>
+</aside>
+
+<section style="width:60%">
+	<div style="background-color:#D3EBCD; padding: 10px 20% 10px 10px;">
+		<p style="text-align:center; font-family: Lucida Sans;"><b>Contenido ^u^</b></p>
+	<hr>	
+    	
+	<article style="text-align:justify;">
+        <img src="C:\Users\100000015\Downloads\ada.jpg" alt="Ada Lovelace" style="width: 100%">
+		<h2 >Biografía</h2>
+		<p>Ada Augusta Byron nació en Londres en 1815. Era hija de la adinerada Annabella Milbanke y el poeta Lord Byron. El matrimonio no duró mucho y, cuando Ada tenía un mes, su madre abandonó a su esposo. La joven Ada recibió lecciones de matemáticas y ciencia en un intento, por parte de su madre, de erradicar la herencia de locura poética que llevaba en los genes. Su infancia transcurrió entre tutores y estudios, lastrada por una mala salud que arrastraría a lo largo de toda su vida.
+            <br>
+            <p>A pesar de que en siglo XIX no era frecuente que las mujeres estudiasen ciencia, Ada tuvo la suerte de contar con grandes maestros, como el matemático Augustus De Morgan o la astrónoma escocesa Mary Somerville. Fue precisamente Sommerville quien le presentó al matemático Charles Babbage, con quien trabó una gran amistad y una fructífera colaboración. En 1835 Ada se casó con el barón William King, que posteriormente se convirtió en conde de Lovelace. Durante su matrimonio siguió estudiando matemáticas. Tras el nacimiento de su tercer y último hijo, Ada comenzó a colaborar con Babbage en la máquina analítica.</p>
+            
+            <p>Su pasión por las matemáticas y su personalidad poco convencional no siempre fueron bien vistas en la corte. Se aficionó al juego y en 1851 trató de crear con unos amigos un modelo matemático para acertar en las apuestas. En los últimos años de su vida su salud se deterioró gravemente, hasta que falleció en 1852, poco antes de cumplir 37 años.</p>
+		<h2>Principales aportes</h2>
+		<p>En 1843, Lovelace escribió que el aparato podría programarse para seguir instrucciones. No solo podría realizar cálculos, sino que también tendría la capacidad de crear, ya que “teje patrones algebraicos justo como el telar de Jacquard teje flores y hojas”.</p>
+                <p>La computadora sobre la que escribía, la máquina analítica o máquina diferencial del inventor británico Charles Babbage, nunca se construyó, pero sus escritos sobre computación han provocado que Lovelace —quien murió de cáncer de útero en 1852, a los 36 años— se haya ganado el reconocimiento de ser la primera persona en programar computadoras.</p>
+                <p>El programa que escribió para la máquina analítica servía para calcular el séptimo número de Bernoulli. Sin embargo, su mayor influencia fue concebir el potencial de la computación. Mencionó que las máquinas serían capaces de hacer más que solo realizar cálculos: podrían entender símbolos y se podrían utilizar para crear música o arte.
+
+                    “Esta información se convertiría en el concepto clave de la era digital”, escribió Walter Isaacson en su libro The Innovators. “Cualquier tipo de contenido, dato o información se podría expresar de forma digital, y las máquinas lo podrían manipular: música, texto, fotos, números, símbolos, sonidos, video”.</p>
+                    <p> Lovelace también exploró las consecuencias que podría acarrear una computadora, pues escribió sobre la responsabilidad que tendría el programador; se le ocurrió —y luego desechó— la idea de que algún día las computadoras podrían pensar y crear por sí mismas: lo que ahora llamamos inteligencia artificial.</p>
+                    <p>“La máquina analítica no pretende originar nada”, escribió Lovelace. “Puede hacer cualquier cosa que sepamos cómo ordenarle que lleve a cabo”.</p>
+                    <p>Su trabajo, redescubierto a mediados del siglo XX, inspiró al Departamento de Defensa de Estados Unidos a nombrar un lenguaje de programación en su honor y, cada octubre, el Día de Ada Lovelace es una celebración de las mujeres en la tecnología.</p>
+		
+			<hr>
+		
+</article>
+
+				
+	</div>
+	</section>
+</main>
+
+
+<footer id="footer">
+<div class="footer__social footer__section">
+	<h2>Mis redes</h2>
+    <div class="social__networks">
+        <div class="social__network">
+            <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+            <span class="social__icon-handler"> <a href="https://github.com/Satoriowo"> Satoriowo </a> </span>
+        </div>
+
+        <div class="social__network">
+            <span class="social__icon-container"><i class="lni lni-linkedin-original social__icon"></i></span>
+            <span class="social__icon-handler">
+                <a href="https://www.linkedin.com/in/katherine-hern%C3%A1ndez-a477b5247/"> Katherine Hernández </a>
+            </span>
+        </div>
+    </div>
+		</div>
+		
+		<div class="footer__contact-form footer__section">
+			<h2>Contacto</h2>
+	<div>		
+	<form>
+		<label for="contactEmail">Enter your email:</label>
+		<input id="contactEmail" required type="email" placeholder="Ingresa tu correo electrónico">
+		
+		<label for="contactMessage">Mensaje:</label>
+		<textarea id="contactMessage" required rows="4" cols="50"></textarea>
+			
+			<input type="submit" value="Enviar">
+	</form>
+	</div>
+	</div>
+
+		</div>
+		
+		<div class="footer__more-sites footer__section">
+            <h2>Otros de mis sitios</h2>
+            <ul>
+                <li> Sitio 1 </li>
+                <li> Sitio 2 </li>
+                <li> Sitio 3 </li>
+  
+             </ul>
+        </div>
+	</footer>		
+</body>
+</html>
